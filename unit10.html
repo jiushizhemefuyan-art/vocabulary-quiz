@@ -1,0 +1,4 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>固定10題</title><style>body{background:#e8f1ff;font-family:'Noto Sans TC',sans-serif;padding:20px;text-align:center}.btn{display:inline-block;margin:6px;padding:12px 18px;background:#4a7bff;color:#fff;border-radius:8px;text-decoration:none;font-size:17px}</style><script>
+function qs(n){return new URL(location.href).searchParams.get(n)}
+window.onload=function(){const u=qs('u')||'1';document.getElementById('title').innerText='Unit '+u+'｜10 題範圍';const box=document.getElementById('buttons');for(let s=1;s<=91;s+=10){let e=s+9;let a=document.createElement('a');a.className='btn';a.innerText=`${s}-${e}`;a.href=`quiz.html?u=${u}&mode=fixed10&range=${s}-${e}`;box.appendChild(a);}}
+</script></head><body><h1 id="title"></h1><div id="buttons"></div><a href="home.html">← 返回</a></body></html>
